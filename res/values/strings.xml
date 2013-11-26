@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsRetriever</string>
+    <string name="DownloadAtStartup">setting_DownloadAtStartup</string>
+	<string name="urlMetroParis">http://erez.metrofrance.com:8080/editions/Paris/Paris.pdf</string>
+	<string name="urlPAR">http://pdf.20mn.fr/$year$/quotidien/$fulldate$_PAR.pdf</string>
+	<string name="urlDev">https://www.google.fr/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=7&amp;ved=0CFsQFjAG&amp;url=http%3A%2F%2Fwww.liafa.jussieu.fr%2F~asarin%2FP7%2FJava%2FQCMcorrige.pdf&amp;ei=it-0Ue7hEeay0QWg64DoBw&amp;usg=AFQjCNFtB2rstd2bB9YMo25doRmb4szERg&amp;sig2=GfmC-ezN-IP-j0-SPBgbng&amp;bvm=bv.47534661,d.d2k&amp;cad=rja</string>
+	<string name="urlFRA">http://pdf.20mn.fr/$year$/quotidien/$fulldate$_FRA.pdf</string>	<string name="prompt_OK">OK</string>
+	<integer name="DdlNotifId">10001</integer>
+	<integer name="AlarmNotifId">10002</integer>
+	<integer name="AlarmId">10003</integer>
+    <string name="prompt_CANCEL">Cancel</string>
+	<string name="prompt_Title">Title</string>
+	<string name="prompt_Msg">Message</string>
+    <string name="str_fullDateWithHour">yyyyMMdd_HHmmss</string>
+    <string name="str_fullDate">yyyyMMdd</string>
+	<string name="str_yearDate">yyyy</string>
+    <string name="aboutFragmentTitle">About this application&#xA0;-&gt;</string>
+    <string name="filesFragmentTitle">&lt;-&#xA0;files&#xA0;-&gt;</string>
+    <string name="settingsFragmentTitle">&lt;-&#xA0;Application settings</string>
+    <string name="settingsFragmentChkbxStartup">Load on startup</string>
+    <string name="devMail">n.chaussard@gmail.com</string>
+    <string name="lblDownloadTodaysFiles"> Download today\'s file !</string>
+    <string name="text_empty">No file in the directory</string>
+	<string name="dialogTrue">a</string>
+	<string name="dialogFalse">b</string>
+	<string name="dialogCancel">c</string>
+	<string name="dialogNeutral">d</string>
+
+    <string name="cfgDownloadOnStartup">cfgDownloadOnStartup</string>
+    <string name="cfgDownloadOnTimer">cfgDownloadOnTimer</string>
+
+	<string name="cfgChkDeleteFileAferDays">cfgChkDeleteFileAferDays</string>
+    <string name="cfgMaxFileDateDays">cfgMaxFileDateDays</string>
+    <string name="cfgAutorunningWeekdays">cfgAutorunningWeekdays</string>
+    <string name="cfgDownloadTime">cfgDownloadTime</string>
+
+	<string-array name="tabWeekdays">
+		<item>Monday</item>
+		<item>Tuesday</item>
+		<item>Wednesday</item>
+		<item>Thursday</item>
+		<item>Friday</item>
+		<item>Saturday</item>
+		<item>Sunday</item>
+	</string-array>
+	<string-array name="tabWeekdaysInt">
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="empty_array"/>
+</resources>

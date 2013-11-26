@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/btnShowFiles" android:title="News" android:onClick="ClickActivityFromMenu" android:icon="@drawable/newspapericon" android:showAsAction="ifRoom" ></item>
+    <item android:id="@+id/btnShowSettings" android:title="Settings" android:onClick="ClickActivityFromMenu" android:icon="@drawable/settingsicon" android:showAsAction="ifRoom" ></item>
+    <item android:id="@+id/btnShowContacts" android:title="Contacts" android:onClick="ClickActivityFromMenu" android:icon="@drawable/mailicon" android:showAsAction="ifRoom" ></item>
+</menu>

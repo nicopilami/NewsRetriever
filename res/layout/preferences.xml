@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Startup behaviour">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/cfgDownloadOnStartup"
+            android:summaryOn="Today's file(s) will be automatically downloaded"
+            android:summaryOff="Today's file(s) will not be downloaded"
+            android:title="Download at application startup"
+            >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/cfgDownloadOnTimer"
+            android:summaryOn="Application will automatically start on each..."
+            android:summaryOff="Application will never start automatically"
+            android:title="Application automatic startup"
+            >
+        </CheckBoxPreference>
+
+
+        <MultiSelectListPreference
+			android:defaultValue="@array/empty_array"
+			android:enabled="true"
+			android:dependency="@string/cfgDownloadOnTimer"
+			android:entries="@array/tabWeekdays"
+			android:entryValues="@array/tabWeekdaysInt"
+			android:key="@string/cfgAutorunningWeekdays"
+			android:persistent="true"
+			android:summary="Autorun periodicity" 
+			android:title=" - each (week days)" />
+
+        <EditTextPreference
+            android:dependency="@string/cfgDownloadOnTimer"
+            android:dialogTitle="Download hour (HH:MM)"
+            android:key="@string/cfgDownloadTime"
+            android:summary="At what time will the application start"
+            android:title=" - at (time of the day)" />
+
+    </PreferenceCategory>
+	
+	
+	<PreferenceCategory android:title="Files cleaning">
+		
+        <CheckBoxPreference
+			android:defaultValue="false"
+			android:key="cfgChkDeleteFileAferDays"
+			android:summaryOn="File cleaning will be automatically processed"
+			android:summaryOff="File will be deleted manually"
+			android:title="Delete old files"
+		>
+        </CheckBoxPreference>
+        <EditTextPreference
+			android:dependency="@string/cfgChkDeleteFileAferDays"
+			android:dialogTitle="Automatic file deletion"
+			android:key="@string/cfgMaxFileDateDays"
+			android:summary="After how many days will the files be deleted ?"
+			android:title="Delete files older than... days" />
+		
+	</PreferenceCategory>
+	
+</PreferenceScreen>

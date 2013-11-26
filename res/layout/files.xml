@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+
+
+    <TextView android:id="@+id/tvDownloadMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+    <View
+            android:id="@+id/emptyLine_second"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    <Button android:id="@+id/btnDownloadTodaysFile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblDownloadTodaysFiles"
+            />
+    <View
+            android:id="@+id/emptyLine_second"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    <ListView android:id="@id/android:list"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:drawSelectorOnTop="false"/>
+
+    <TextView android:id="@id/android:empty"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#FF0000"
+              android:text="No data"/>
+    <View
+        android:id="@+id/emptyLine_third"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView android:id="@+id/tvNextDownloadTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+    <View
+        android:id="@+id/emptyLine_fourth"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+</LinearLayout>
